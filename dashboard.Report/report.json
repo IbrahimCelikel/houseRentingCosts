@@ -1,0 +1,105 @@
+{
+  "config": "{\"version\":\"5.57\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU08\",\"version\":\"5.58\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU08",
+            "path": "BaseThemes/CY24SU08.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "f3edf49c7e6157980e69",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"14c8105542d95ce0d63e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":1000,\"width\":1280,\"height\":80.62992125984252,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Housing Rents\",\"textStyle\":{\"fontSize\":\"40pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.63,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"23f505c50dfdd61b52bc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":471.6666666666667,\"z\":8000,\"width\":371.6666666666667,\"height\":248.33333333333334,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(cleaned_data.price)\"}],\"Category\":[{\"queryRef\":\"cleaned_data.salon\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"cleaned_data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Prices\"}},\"Function\":1},\"Name\":\"Sum(cleaned_data.price)\",\"NativeReferenceName\":\"Average of Prices\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Number of Salons\"},\"Name\":\"cleaned_data.salon\",\"NativeReferenceName\":\"Number of Salons\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Prices\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Average of the Prices by the Number of Salons'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 248.33,
+          "width": 371.67,
+          "x": 0.00,
+          "y": 471.67,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"2b4a4f9d1087fa92a8f0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":740,\"y\":472,\"z\":7000,\"width\":540,\"height\":248,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(cleaned_data.price)\"}],\"Category\":[{\"queryRef\":\"cleaned_data.rooms\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"cleaned_data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Prices\"}},\"Function\":1},\"Name\":\"Sum(cleaned_data.price)\",\"NativeReferenceName\":\"Average of Prices\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Number of Rooms\"},\"Name\":\"cleaned_data.rooms\",\"NativeReferenceName\":\"Number of Rooms\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Prices\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Average of the Prices by the Number of Rooms'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 248.00,
+          "width": 540.00,
+          "x": 740.00,
+          "y": 472.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"463be994ebf33414d03b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":226.66666666666669,\"z\":0,\"width\":278.33333333333337,\"height\":245,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"cleaned_data.city\",\"active\":true},{\"queryRef\":\"cleaned_data.region\"},{\"queryRef\":\"cleaned_data.district\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"cleaned_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"city\"},\"Name\":\"cleaned_data.city\",\"NativeReferenceName\":\"city\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"region\"},\"Name\":\"cleaned_data.region\",\"NativeReferenceName\":\"region\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"district\"},\"Name\":\"cleaned_data.district\",\"NativeReferenceName\":\"district\"}]},\"expansionStates\":[{\"roles\":[\"Values\"],\"levels\":[{\"queryRefs\":[\"cleaned_data.city\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"cleaned_data\"}},\"Property\":\"city\"}}],\"isPinned\":true},{\"queryRefs\":[\"cleaned_data.region\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"cleaned_data\"}},\"Property\":\"region\"}}],\"isPinned\":true},{\"queryRefs\":[\"cleaned_data.district\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Bursa'\"}}],\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Gemlik'\"}}],\"isToggled\":true}]}]}}],\"drillFilterOtherVisuals\":true,\"filterSortOrder\":3,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Select City or Region or District'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[{\"name\":\"f34ef17e85869d2bc261\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"cleaned_data\"}},\"Property\":\"city\"}},\"type\":\"Categorical\",\"howCreated\":0,\"isHiddenInViewMode\":false,\"ordinal\":0},{\"name\":\"dda35f2ee704bfb07d97\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"cleaned_data\"}},\"Property\":\"region\"}},\"type\":\"Categorical\",\"howCreated\":0,\"ordinal\":1}]",
+          "height": 245.00,
+          "width": 278.33,
+          "x": 0.00,
+          "y": 226.67,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"6c2748eda8921cb10719\",\"layouts\":[{\"id\":0,\"position\":{\"x\":278.0487804878049,\"y\":81.95121951219512,\"z\":5000,\"width\":462.4390243902439,\"height\":389.2682926829268,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"cleaned_data.heating_type\",\"active\":true}],\"Y\":[{\"queryRef\":\"Avg(cleaned_data.price)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"cleaned_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Heating Type\"},\"Name\":\"cleaned_data.heating_type\",\"NativeReferenceName\":\"Heating Type\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Prices\"}},\"Function\":1},\"Name\":\"Avg(cleaned_data.price)\",\"NativeReferenceName\":\"Average of Prices\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Prices\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Average of The Prices by the Heating Type'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 389.27,
+          "width": 462.44,
+          "x": 278.05,
+          "y": 81.95,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"8c11d88ebba75d01747e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":371.6666666666667,\"y\":471.6666666666667,\"z\":4000,\"width\":368.33333333333337,\"height\":248.33333333333334,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"cleaned_data.furnished_house\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(cleaned_data.price)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"cleaned_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Fournish\"},\"Name\":\"cleaned_data.furnished_house\",\"NativeReferenceName\":\"Fournish\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Prices\"}},\"Function\":1},\"Name\":\"Sum(cleaned_data.price)\",\"NativeReferenceName\":\"Average of Prices\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Prices\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Average of the Prices for Whether Fourhished or Not'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 248.33,
+          "width": 368.33,
+          "x": 371.67,
+          "y": 471.67,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"a317417da2b461b89f89\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":82.3076923076923,\"z\":2000,\"width\":278.46153846153845,\"height\":114.61538461538461,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(cleaned_data.price)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"cleaned_data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Prices\"}},\"Function\":5},\"Name\":\"Sum(cleaned_data.price)\",\"NativeReferenceName\":\"Count of Prices\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Prices\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 114.62,
+          "width": 278.46,
+          "x": 0.00,
+          "y": 82.31,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"de92330714940de659bd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":740,\"y\":82.85714285714286,\"z\":6000,\"width\":540,\"height\":388.5714285714286,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(cleaned_data.price)\"}],\"Category\":[{\"queryRef\":\"cleaned_data.net area\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"cleaned_data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Prices\"}},\"Function\":1},\"Name\":\"Sum(cleaned_data.price)\",\"NativeReferenceName\":\"Average of Prices\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Net Area\"},\"Name\":\"cleaned_data.net area\",\"NativeReferenceName\":\"Net Area\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Prices\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Average of the Prices By Net Area of Less Than 200  MS'\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"cleaned_data\"}},\"Property\":\"Net Area\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"cleaned_data\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Net Area\"}},\"Right\":{\"Literal\":{\"Value\":\"200L\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 388.57,
+          "width": 540.00,
+          "x": 740.00,
+          "y": 82.86,
+          "z": 6000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

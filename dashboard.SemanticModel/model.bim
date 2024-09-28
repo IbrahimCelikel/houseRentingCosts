@@ -1,0 +1,264 @@
+{
+  "compatibilityLevel": 1550,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"cleaned_data\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.136.1202.0 (24.09)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "cleaned_data",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Prices",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6daa7905-7ada-4701-8643-5c8c6e35f425",
+            "sourceColumn": "Prices",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "city",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8a65c270-facb-4b5b-9a34-db28cf14de63",
+            "sourceColumn": "city",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "region",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "47db4dca-08a3-424b-9275-9640f81e914c",
+            "sourceColumn": "region",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "district",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7b01c894-822e-4cd1-b0e9-ef8d43490ad4",
+            "sourceColumn": "district",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "floor",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8c38f33b-7a24-4637-b231-742ed6b3c26c",
+            "sourceColumn": "floor",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "age",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ac4c9629-ba11-41f3-b5ee-837e83bfc69d",
+            "sourceColumn": "age",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Heating Type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b0c21afe-00e5-46b8-9330-89ddd3cc617e",
+            "sourceColumn": "Heating Type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "total_floors",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f7bdf780-c5b7-4421-8254-2fbb53730a43",
+            "sourceColumn": "total_floors",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Fournish",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ed419b77-59ab-4429-a8eb-755ae4b1ac96",
+            "sourceColumn": "Fournish",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "baths",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f4adbf67-2353-4c29-bc56-e8653cfba280",
+            "sourceColumn": "baths",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Number of Rooms",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "bfa6a30b-eaa0-4ec5-9623-570b0d8cc435",
+            "sourceColumn": "Number of Rooms",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Number of Salons",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ca8c1ead-5583-4c17-8ca2-d65abb6b257d",
+            "sourceColumn": "Number of Salons",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "area",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "309b0ae5-f197-4a39-ace8-0aa5803c3a89",
+            "sourceColumn": "area",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Net Area",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f37b559c-c711-4a38-91bb-92ff61c87ed0",
+            "sourceColumn": "Net Area",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "19b33c07-c17b-4a04-a16e-0e33f620bc53",
+        "partitions": [
+          {
+            "name": "cleaned_data",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"D:\\repositories\\repositories\\data_analysis&science\\HouseRentingPrices\\cleaned_data.csv\"),[Delimiter=\",\", Columns=14, Encoding=65001, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"price\", Int64.Type}, {\"city\", type text}, {\"region\", type text}, {\"district\", type text}, {\"floor\", type text}, {\"age\", Int64.Type}, {\"heating_type\", type text}, {\"total_floors\", Int64.Type}, {\"furnished_house\", type text}, {\"baths\", Int64.Type}, {\"rooms\", Int64.Type}, {\"salon\", Int64.Type}, {\"area\", Int64.Type}, {\"net area\", Int64.Type}}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type\",{{\"price\", \"Prices\"}, {\"salon\", \"Number of Salons\"}, {\"furnished_house\", \"Fournish\"}, {\"heating_type\", \"Heating Type\"}, {\"net area\", \"Net Area\"}, {\"rooms\", \"Number of Rooms\"}})",
+                "in",
+                "    #\"Renamed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
